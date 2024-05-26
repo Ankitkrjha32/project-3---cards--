@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardsprojects</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+            height: 100vh;
+            width: 100vw;
+            /* background: linear-gradient(to right, #0cbaba, #380036, darksalmon); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 50% 50%, rgba(140, 135, 127, 0.02) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+
+}
+
+.box{
+        height: 650px;
+        width: 400px;
+        /* background-color: aliceblue; */
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        /* background: radial-gradient(circle at top left, #23EC05, #D712C5); */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        gap: 17px;
+        
+
+    /* global 94%+ browsers support */
+    /* background: linear-gradient(90deg, rgba(0, 86, 128, 1) 0%, rgba(238, 130, 238, 1) 100%); */
+    background: linear-gradient(184deg, rgba(255, 193, 7, 1) 0%, rgba(49, 220, 255, 1) 100%);
+    box-shadow: -10px 5px 17px -4px rgba(0,0,0,0.85);
+-webkit-box-shadow: -10px 5px 17px -4px rgba(0,0,0,0.85);
+-moz-box-shadow: -10px 5px 17px -4px rgba(0,0,0,0.85);
+
+}
+
+
+.cards img{
+    width: 400px;
+    height: 290px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.navtab{
+    height: 70px;
+    width: 95%;
+    background-color: rgba(132, 151, 255, 0.527);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 7px;
+    border: 1px solid;
+    box-shadow: -10px 5px 17px -4px rgba(0,0,0,0.85);
+-webkit-box-shadow: -10px 5px 17px -4px rgba(0,0,0,0.85);
+-moz-box-shadow: -10px 5px 17px -4px rgba(0,0,0,0.85);
+}
+.leftitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.imgitem img{
+    height: 33px;
+    /* background-color: beige; */
+    border-radius: 30px;
+    
+}
+.textitem p{
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.tex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.0rem;
+}
+.tex p{
+    text-align: center;
+    font-weight: 500 ;}
+
+#paymenttab{
+    
+          
+    
+            background-image: linear-gradient(to right, #360033 0%, #0b8793  51%, #360033  100%);
+            /* margin: 10px; */
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            width: 90%;
+          
+
+        
+         
+}
+
+#paymenttab:hover {
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+
+.canceltab a{ 
+    font-size: 1.6rem;
+   
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="cards">
+                <img src="https://i.scdn.co/image/ab67706c0000da841628f00934e88e7a443ebec2">
+            </div>
+            <div class="tex">
+                <h2>Order Summary</h2>
+                <p>Website To be used to purchased the courses of coding practises ,learning like html css javascript data structure and algorithm this all thing can be done by purchasing this course make sure to buy this course and its is so affordable</p>
+                
+            </div>
+            <div class="navtab">
+                <div class="leftitem">
+                    <div class="imgitem">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiELq8P8P7MsHTfZzKJfnxnw3H-1rp-XnbTQ&usqp=CAU">
+                    </div>
+                    <div class="textitem">
+                        <p>Annual plan</p>
+                        <p>$99.4/year <p>
+                    </div>
+                </div>
+                <div class="rightitem">
+                    <a href="#">Change Plan</a>
+
+                </div>
+            
+            
+            </div>
+
+            
+            <button id="paymenttab">Proceed To Payment </button>
+            
+            <div class="canceltab">
+                <a href="#">Cancel</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
